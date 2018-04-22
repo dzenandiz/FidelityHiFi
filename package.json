@@ -1,0 +1,21 @@
+{
+  "name": "fidelityhifi-demo-application",
+  "version": "1.0.0",
+  "description": "Protractor tests for FidelityHiFi demo application",
+  "scripts": {
+    "test": "node ./node_modules/protractor/bin/protractor protractor.conf.js",
+    "download-webdriver-binaries": "node ./node_modules/protractor/bin/webdriver-manager update"
+  },
+  "devDependencies": {
+    "protractor": "^5.3.1",
+    "jasmine-data-provider": "^2.2.0",
+    "protractor-screenshoter-plugin": "^0.10.1",
+    "eyes.selenium": "^0.0.78"
+  },
+  "keywords": [
+    "protractor",
+    "fidelityhifi",
+    "testautomation"
+  ],
+  "author": "Dzenan Dizdarevic"
+}
