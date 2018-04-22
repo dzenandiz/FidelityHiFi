@@ -37,7 +37,7 @@ fdescribe('Login page test cases', function () {
         eyes.close();
     });
 
-    fit('2. Log in as test user', function () {
+    it('2. Log in as test user', function () {
         page.logIn(D.testUser[0], D.testUser[1]);
     });
 

@@ -7,7 +7,6 @@ var D      = require('../data-provider/all-data');
 var emailAddress = $('#login-username');
 var password     = $('#login-password');
 var logInBtn     = element(by.buttonText('Log In'));
-var logOutBtn    = element(by.linkText('Log Out'));
 
 
 var LoginPage = function () {
@@ -26,12 +25,6 @@ var LoginPage = function () {
         helper.waitAndClick(logInBtn);
         return this;
     };
-
-    this.clickLogout = function () {
-        helper.waitAndClick(logOutBtn);
-        browser.sleep(5000);
-
-    }
 };
 
 module.exports = new LoginPage();
