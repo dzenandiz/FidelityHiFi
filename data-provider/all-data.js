@@ -37,7 +37,7 @@ D.inputValuesOnRegisterPage = [
 ];
 
 D.testUser = [
-    'noreply2@mailinator.com',
+    'noreply@cubecart.com',
     'test123',
 ];
 

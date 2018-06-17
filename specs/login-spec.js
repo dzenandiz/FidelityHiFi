@@ -14,6 +14,10 @@ fdescribe('Login page test cases', function () {
         page.navigate_to_login_page();
     });
 
+    afterAll(function () {
+        browser.driver.manage().deleteAllCookies();
+    });
+
     it('1. Visual validation', function () {
         eyes.open(browser, 'Visual test', 'Login and Register page test');
 
@@ -39,6 +43,7 @@ fdescribe('Login page test cases', function () {
 
     it('2. Log in as test user', function () {
         page.logIn(D.testUser[0], D.testUser[1]);
+        browser.sleep(2000);
     });
 
 });

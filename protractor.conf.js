@@ -6,23 +6,25 @@ exports.config = {
         // Available options for browserName: 'chrome', 'firefox', 'MicrosoftEdge'
         // Set shardTestFiles to 'true' if you want to run multiple instances of the same browser
 
-        // {
-        //     browserName: 'firefox',
-        //     specs: ['./specs/*'],
-        //     shardTestFiles: false,
-        //     maxInstances: 2,
-        //     elementScrollBehavior: 1,
-        //     nativeEvents: false,
-        // },
-        //
         {
             browserName: 'chrome',
-            chromeOptions: {mobileEmulation: {deviceName: 'Nexus 5'}},
-            specs: ['./specs/*.js',],
+            specs: ['./specs/*'],
             shardTestFiles: false,
             maxInstances: 2,
-            params: 'mobile version'
+            elementScrollBehavior: 1,
+            nativeEvents: false,
         },
+
+        //  Mobile Emulation in Chrome
+        // {
+        //     browserName: 'chrome',
+        //     chromeOptions: {mobileEmulation: {deviceName: 'Nexus 5'}},
+        //     specs: ['./specs/*.js',],
+        //     shardTestFiles: false,
+        //     maxInstances: 2,
+        //     params: 'mobile version'
+        // },
+
         // {
         //     browserName: 'MicrosoftEdge',
         //     specs: ['./specs/*'],

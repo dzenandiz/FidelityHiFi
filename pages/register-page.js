@@ -64,7 +64,6 @@ var RegisterPage = function () {
 
     this.navigate_to_register_page = function () {
         browser.get(D.baseUrl);
-        common.clickCloseBtn();
         if (D.selectedVersion === D.versions.mobile) {
             helper.waitAndClick(common.toggleBtnMob);
             helper.waitAndClick(common.loginRegisterLinkMob);
